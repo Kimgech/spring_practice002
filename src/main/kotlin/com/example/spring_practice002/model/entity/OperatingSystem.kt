@@ -17,13 +17,10 @@ data class OperatingSystem(
     @Column("version")
     val version: String,
 
-    @Column("owner")
-    val owner: String,
 ) {
     fun toDto() = OperatingSystemDto(
         id = id!!,
         name = name,
-        version = version,
-        owner=owner
+        version = version
     )
 }

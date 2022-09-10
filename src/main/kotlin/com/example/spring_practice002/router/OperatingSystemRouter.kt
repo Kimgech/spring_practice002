@@ -9,7 +9,7 @@ import org.springframework.web.reactive.function.server.ServerResponse
 import org.springframework.web.reactive.function.server.router
 
 @Configuration
-class HelloRouter(val cloudInstanceHandler: CloudInstanceHandler, val osHandler: OSHandler) {
+class OperatingSystemRouter(val cloudInstanceHandler: CloudInstanceHandler, val osHandler: OSHandler) {
 
     @Bean
     fun osRouter(): RouterFunction<ServerResponse> =
